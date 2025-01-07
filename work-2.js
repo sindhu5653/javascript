@@ -1,6 +1,6 @@
-    let units = parseInt(prompt("Enter the number of units consumed:"));
+    units =prompt("Enter the number of units consumed:");
 
-    let billAmount = 0;
+    billAmount = 0;
 
     if (units <= 100) {
         billAmount = 0;
