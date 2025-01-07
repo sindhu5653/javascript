@@ -1,7 +1,7 @@
 
-let costPrice = parseFloat(prompt("Enter the cost price of the bike in Rs:"));
+costPrice =prompt("Enter the cost price of the bike in Rs:");
 
-let taxAmount = 0;
+taxAmount = 0;
 
 if (costPrice > 100000) {
     taxAmount = costPrice * 0.15;
