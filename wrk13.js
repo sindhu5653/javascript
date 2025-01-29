@@ -4,11 +4,11 @@ let evensum =0
 let oddsum =0
  
 for (let i = 0; i < array.length; i++) {
-    naturalsum=naturalsum+array[i]
+    naturalsum+=array[i]
   if (array[i] % 2 === 0) {
-    evensum=evensum+array[i]
+    evensum+=array[i]
   } else {
-    oddsum=oddsum+array[i]
+    oddsum+=array[i]
   }
 }
 console.log("Even sum:", evensum);
