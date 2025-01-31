@@ -32,7 +32,7 @@ function searchStudent() {
 
 function deleteStudent() {
     let deleteID = prompt("Enter student ID to delete:");
-    let index = students.findIndex(s => s.id === deleteID);
+    let index = students.find(s => s.id === deleteID);
     if (index !== -1) {
         students.splice(index, 1);
         alert("Student deleted successfully!");
