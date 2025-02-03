@@ -1,14 +1,14 @@
 const products=[]
 function addproduct(){
-    let pro=parseInt(prompt=('Enter the no.of products to add:'))
+    let pro=parseInt(prompt('Enter the no.of products to add:'))
     for(let i=0;i<pro;i++){
-        let name=prompt=('Enter the product name')
-        let id=prompt=('Enter the product id')
-        let price=prompt=('Enter the product price')
-        let quantity=prompt=('Enter the product quantity')
+        let name=prompt('Enter the product name')
+        let id=prompt('Enter the product id')
+        let price=prompt('Enter the product price')
+        let quantity=prompt('Enter the product quantity')
         // let product={
         // name:name,id:id,price:price,quantity:quantity
-        // }
+        // }   
         //     products.push(product)
         products.push({name,id,price,quantity})
         }
@@ -17,7 +17,7 @@ function addproduct(){
 function updateproduct(){
     let id=parseInt(prompt=('Enter the product id to update'))
     let index=products.find((product)=>product.id==id)
-    if(index!=-1){
+    if(index){
         let name=prompt=('Enter the new product name')
         let price=prompt=('Enter the new product price')
         let quantity=prompt=('Enter the new product quantity')
@@ -29,9 +29,9 @@ function updateproduct(){
 function removeproduct(){
     let id=prompt('Enter product id to delete')
     let index=products.find((product)=>product.id==id)
-    if(index!=-1){
+    if(index){
         products.splice(index,1)
-    // products.splice(id,1)
+    // products.splice(id,1) 
     alert('Product Delete Successfully')
     }
     else{
@@ -53,14 +53,13 @@ function viewallproducts(){
 
 function searchproduct(){
     let id=prompt('Enter product id to search')
-    for(i=0;i<products.length;i++){
-        if(products[i].id==id){
-            console.log(products[i])
-        }
-        else{
-            alert('Product Not Found')
-        }
-    }
+let index=products.find((product)=>product.id==id)
+if(index){
+    console.log(index)
+}
+else{
+    alert('Product Not Found')
+}
 }
 
 function Exit(){
@@ -80,8 +79,8 @@ switch(choice){
     break;
     case '5':searchproduct()
     break;
-    case '6':exit()
-    break;
+    // case '6':exit()
+    // return;
     default:console.log('Invalid choice')
     }
   }
