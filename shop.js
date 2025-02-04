@@ -6,10 +6,6 @@ function addproduct(){
         let id=prompt('Enter the product id')
         let price=prompt('Enter the product price')
         let quantity=prompt('Enter the product quantity')
-        // let product={
-        // name:name,id:id,price:price,quantity:quantity
-        // }   
-        //     products.push(product)
         products.push({name,id,price,quantity})
         }
         alert ('Products Added Successfully')
@@ -31,7 +27,6 @@ function removeproduct(){
     let index=products.find((product)=>product.id==id)
     if(index){
         products.splice(index,1)
-    // products.splice(id,1) 
     alert('Product Delete Successfully')
     }
     else{
