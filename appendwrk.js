@@ -1,9 +1,7 @@
 function btn(){
-    text=document.getElementById('inp').value
-    display=document.getElementById('display')
-    div=document.createElement('div')
-    div.textContent=text
-    display.appendchild(div)
-     document.getElementById('inp').value=''
+    let text=document.getElementById('text')
+    let main=document.getElementById('display')
+    let div=document.createElement('div')
+    div.innerHTML=`<p>${text.value}</p>`
+    main.appendChild(div)
 }
-
