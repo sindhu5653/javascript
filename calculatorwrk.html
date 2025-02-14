@@ -8,11 +8,11 @@
 </head>
 <body>
     <div class="calculator">
-        <div class="display">
-            <input type="text">
+        <div id="display">
+            <input value="" class="display" type="text">
         </div>
-        <div class="calc-body">
-            <button id="one">1</button>
+        <div id="button">
+            <button data-value="1" id="one">1</button>
             <button id="two">2</button>
             <button id="three">3</button>
             <button id="four">4</button>
@@ -21,15 +21,16 @@
             <button id="seven">7</button>
             <button id="eight">8</button>
             <button id="nine">9</button>
-            </div>
-            <div class="btn">
+            
             <button onclick="add()">+</button>
             <button onclick="sub()">-</button>
             <button onclick="mul()">*</button>
             <button onclick="div()">/</button>
             </div>
-        <button>=</button>
+        <button class="equals">=</button>
+        </div>
     </div>
+
     <script src="calculatorwrk.js"></script>
 </body>
 </html>
