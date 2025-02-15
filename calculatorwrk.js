@@ -2,7 +2,7 @@ const display=document.querySelector('.display'); //got input field
 const buttons=document.querySelectorAll('button');
 console.log(buttons,'this is button array')
 
-let currentInput="15";
+let currentInput="";
 let firstOperand=null;
 let operator=null;
 let secondOperand=null;
