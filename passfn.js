@@ -10,8 +10,11 @@
 // }
 // firstFunction('Synnefo',secondFunction);
 
-setTimeout(function(a){
+setTimeout(function(){
     console.log('This is a callback function');
     },2000);
 
-    
+    // setInterval(function(){
+    //     console.log('This is a callback function');
+    //     },2000);
+       
