@@ -4,11 +4,11 @@
 // [a,b,...rest]=[1,2,3,4];
 // console.log(a,b,rest);
 
-// const originalArray=[1,2,3]
-// const newArray= [...originalArray];
-// console.log(newArray.map((item)=>{
-//     console.log(item)
-// }));  
+const originalArray=[1,2,3]
+const newArray= [...originalArray];
+console.log(newArray.map((item)=>{
+    console.log(item)
+}));  
 
 // rest operator
 // let a,b,c,rest
@@ -24,10 +24,10 @@
 // console.log('combinedArray');
 // console.log(arr1); // [1,2,3,4,5]
 
-function check(a,b,...rest){
-    console.log(a,b,rest);
-}
-let numbers=[9,7,5,3,1,123,456,789]
-check(...numbers)
+// function check(a,b,...rest){
+//     console.log(a,b,rest);
+// }
+// let numbers=[9,7,5,3,1,123,456,789]
+// check(...numbers)
 
 

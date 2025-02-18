@@ -1,6 +1,6 @@
 let i=1;
 let display=setInterval(()=>{
-    while(i<=10)
+
     console.log(i);
     i++;
     },1000);
