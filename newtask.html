@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact List</title>
 </head>
 <body>
-    <input type="text" id="text">
-    <button onclick="btn()">Add</button>
-    <div id="main"></div>
-    <div id="main2">
-    <button onclick="btn()">Edit</button>
-    <button onclick="btn()">Delete</button>
-    </div>
-    <script src="newtask.js"></script>
+    <h2>Contact List</h2>
+    <input id="nameInput" placeholder="Enter name">
+    <input id="emailInput" placeholder="Enter email">
+    <input id="phoneInput" placeholder="Enter phone">
+    <button onclick="addContact()">Add</button>
+    <ul id="contactList"></ul>
+
+    <script src="user.js"></script>
 </body>
 </html>

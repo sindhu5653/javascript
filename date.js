@@ -1,15 +1,5 @@
-function updateDateTime() {
-    const now = new Date();
-    const formattedDateTime = now.toString('en-US', {
-        weekday: 'long',
-        year: 'numeric',
-        month: 'long',
-        day: 'numeric',
-        hour: '2-digit',
-        minute: '2-digit',
-        second: '2-digit',
-        hour12: true
-    });
-    document.getElementById('datetime').textContent = formattedDateTime;
+function time() {
+    let time = new Date();
+    document.getElementById("clock").textContent = time.toLocaleString();
 }
-setInterval(updateDateTime, 1000);
+setInterval(time, 1000);
