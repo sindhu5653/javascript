@@ -5,29 +5,16 @@
 // console.log(element);
 
 
-// let arr=[{id:1,name:'Jhon'},
-//     {id:2,name:'Alice'},
-//     {id:3,name:'Gokul'}]
-// let element=arr.find(value=>value.id==5)
-//     if(element){
-//         console.log(element)
-//     }
-//     else{
-//         console.log('user not found')
-//     }
-
-// console.log(element);
-
-a=10
-b=2
-c=11
-if(a){
-    if(b){
-        console.log(b)
+let arr=[{id:1,name:'Jhon'},
+    {id:2,name:'Alice'},
+    {id:3,name:'Gokul'}]
+let element=arr.find(value=>value.id==5)
+    if(element){
+        console.log(element)
     }
     else{
-        console.log(c)
+        console.log('user not found')
     }
-}
-console.log(a)
-   
+
+console.log(element);
+
