@@ -9,5 +9,5 @@
 let arr=[{id:1,name:'Alice',age:12},
          {id:2,name:'Jhon',age:19},
          {id:3,name:'Doe',age:22}]
-let newArr=arr.filter(value=>value>18)
+let newArr=arr.filter(value=>value.age>18)
 console.log(newArr)
