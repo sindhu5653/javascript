@@ -1,9 +1,3 @@
-// function time() {
-//     let time = new Date();
-//     document.getElementById("hr").textContent = time.toLocaleTimeString()
-// }
-// setInterval(time, 1000);
-
 setInterval(()=>{
     const today=new Date();
     document.querySelector("#hr").innerHTML=today.getHours();

@@ -1,132 +1,75 @@
-/* body{
-background-image: url('clock.png');
-            background-size: 200px;
-            background-position: center;
-            background-repeat: no-repeat;
-            text-align: center;
-            color: white;
-        } */
-        /* #clock {
-            font-weight: bold;
-            background: gray;
-            display: inline-block;
-            padding: 10px 20px;
-            border-radius: 10px;
-        } */
-
-        /* h2 {
-            margin-top: 80px;
-            color: black;
-            text-align: center;
-        }
-        .main1{
-            background-color: lightskyblue;
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            gap: 5px;
-            justify-content: space-evenly;
-            height: 100px;
-            width: 100px;
-        }
-
-
-        #hr{
-            background-color: rgba(141, 135, 250, 0.879);
-            color: white;
-            height: 40px;
-            width: 100px;
-            text-align: center;
-        }
-        main2{
-            background-color: lightskyblue;
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            gap: 5px;
-            justify-content: space-evenly;
-        }
-        #min{
-            background-color: lightskyblue;
-            color: white;
-            height: 100px;
-            width: 100px;
-            text-align: center;
-        }
-        main{
-            background-color: lightskyblue;
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            gap: 5px;
-            justify-content: space-evenly;
-        }
-        #sec{
-            background-color: rgb(250, 135, 235);
-            color: white;
-            height: 100px;
-            width: 100px;
-            text-align: center;
-        } */
-
-
-
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@0,400..700;1,400..700&family=Odibee+Sans&family=Oranienbaum&family=Pompiere&display=swap');
 *{
-    box-sizing: border-box;
+    box-sizing: border-box; 
     padding: 0;
     margin: 0;
     font-family: sans-serif;
 }
 body{
+    background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     flex-direction: column;
-    /* background-color:red; */
 }
 h2{
     color: white;
+    margin-bottom: 10px;
+    font-size: 55px;
+    letter-spacing: 3px;
+}
+P{
+    color: white;
     margin-bottom: 20px;
-    font-size: 23px;
-    letter-spacing: 2px;
+    font-size: 15px;
+    letter-spacing: 4px;
+    font-weight: 600;
 }
 .main{
-    width: 300px;
+    width: 400px;
     display: flex;
 }
 .main>div{
     flex: 1;
     text-align: center;
-    background: lightskyblue;
+    background: rgb(16, 145, 224);
     height: 100px;
     margin: 3px;
 }
 .main>div:nth-child(3){
-    background-color: pink;
-
+    background-color: rgb(253, 39, 196);
 }
-.num{
-    height: 70px;
+.clk{
+    height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
-    font-size: 30px;
-    /* box-shadow: 0px 3px 0 0 black; */
-    position: relative;
-    z-index: 10;
-
-}
+    font-size: 60px;
+    
+} 
 .text{
-    height: 30px;
-    font-size: 12px;
+    height: 50px;
+    font-size: 18px;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-weight: 300;
     background: #0b83e5;
-    text-transform: uppercase;
-
+    font-family: "Oranienbaum", serif;
+    font-weight: 400;
+    font-style: normal;
 }
-.second text{
-    background: palevioletred;
+.text1{
+    height: 50px;
+    font-size: 18px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #da30a4;
+    font-family: "Oranienbaum", serif;
+    font-weight: 400;
+    font-style: normal;
 }
