@@ -1,28 +1,43 @@
-// let arr=[3,4,5,6,7]
-// for(i=3;i<=7;i++){
-//     arr1=[`${i*i}`]
-//     console.log(arr1)
+// let arr=[3,4,5,6,7,]
+// for(i=0;i<5;i++){
+//   arr[i]=arr[i]*arr[i]
 // }
+// console.log(arr)
 
-// let number=prompt('Enter the number')
-// let num=a=>{
-//     if(num%2==0){
-//         console.log('The number is even');
+
+
+// let num=4;
+// let star="";        
+//     for (let i=1;i<=num;i++) {    
+//         for (let j=1;j<=i;j++) {      
+//             star+="*";    
+//         }
+//         star+="\n";   
 //     }
+//     console.log(star);
+
+
+
+
+// let number=prompt('Enter the number:')
+// const num=a=>{
+//    if(a%2==0){
+//     console.log('even')
+//    }
+//    else{
+//     console.log('odd')
+//    }
 // }
-// num();
+// num(number)
 
 
-star='' 
-for (i=1;i<=4;i++){
-    for(j=1;j<=4;j++){
-        star=star+"*"
-    }
-    star=star+'\n'
+const button=[]
+function btn(){
+    let text=document.getElementById('text')
+    let main=document.getElementById('display')
+    let div=document.createElement('div')
+    // div.innerHTML=`${text.value}`
+    // main.appendChild(div)
+    button.push(div)
+
 }
-console.log(star)
-
-
-// function add(){
-
-// }
